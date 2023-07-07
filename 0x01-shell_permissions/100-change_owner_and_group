@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo chown vincent:staff 0x01-shell_permissions
