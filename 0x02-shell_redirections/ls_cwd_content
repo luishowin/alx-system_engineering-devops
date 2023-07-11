@@ -1,0 +1,16 @@
+total 34
+drwxr-xr-x 1 Luis 197121     0 Jul 11 13:18 .
+drwxr-xr-x 1 Luis 197121     0 Jul 10 15:37 ..
+-rw-r--r-- 1 Luis 197121 12288 Jul 10 15:09 .3-twofiles.swp
+-rwxr-xr-x 1 Luis 197121    32 Jul 11 10:07 0-hello_world
+-rwxr-xr-x 1 Luis 197121    31 Jul 11 12:12 1-confused_smiley
+-rwxr-xr-x 1 Luis 197121    28 Jul 10 15:09 2-hellofile
+-rwxr-xr-x 1 Luis 197121    39 Jul 10 15:09 3-twofiles
+-rwxr-xr-x 1 Luis 197121    35 Jul 10 15:09 4-lastlines
+-rwxr-xr-x 1 Luis 197121    35 Jul 10 15:09 5-firstlines
+-rwxr-xr-x 1 Luis 197121    41 Jul 11 12:17 6-third_line
+-rwxr-xr-x 1 Luis 197121    84 Jul 11 13:15 7-file
+-rwxr-xr-x 1 Luis 197121    36 Jul 11 13:18 8-cwd_state
+-rw-r--r-- 1 Luis 197121   958 Jul 11 12:16 iacta
+-rw-r--r-- 1 Luis 197121     0 Jul 11 13:19 ls_cwd_content
+-rw-r--r-- 1 Luis 197121     9 Jul 10 15:39 README.md
