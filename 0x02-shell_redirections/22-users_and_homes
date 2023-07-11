@@ -1,0 +1,2 @@
+#!/bin/bash
+awk -F: '{printf "User: %s \t Home Directory: %s\n", $1, $6}' /etc/passwd | sort
