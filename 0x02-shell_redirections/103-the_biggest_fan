@@ -1,0 +1,2 @@
+#!/bin/bash
+cut -f1 <logfile> | sort | uniq -c | sort -rnk1,1 | head -n 11
