@@ -1,0 +1,2 @@
+#!/bin/bash
+set | grep -E '^[a-zA-Z_][a-zA-Z0-9_]*(=| \(\))'
