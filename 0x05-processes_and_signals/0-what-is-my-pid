@@ -1,4 +1,4 @@
 #!/bin/bash
+#command to display own pid
 
-#command
 echo $$
