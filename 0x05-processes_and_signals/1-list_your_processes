@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#list of currentl running processes
+
+ps -e -o user,pid,%cpu,%mem,vsz,rss,tty,stat,comm --forest | tail -n +2
