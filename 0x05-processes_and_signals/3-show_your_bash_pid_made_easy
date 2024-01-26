@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#displays pid, proc name and those with bash
+
+for pid in /proc/[0-9]*; do
+    # Check if the process exists and if its name contains the word "bash"
+    if [ -f "$pid/cmdline" ] && grep -q "bash" "$pid/cmdline"; then
+        # Extract the process name from the cmdline file
+        process_name=$(tr '\0' ' ' < "$pid/cmdline")
+        # Extract the PID from the directory name
+        pid_number=$(basename "$pid")
+        echo "PID: $pid_number, Process Name: $process_name"
+    fi
+done
