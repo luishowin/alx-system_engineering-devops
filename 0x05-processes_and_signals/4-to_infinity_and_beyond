@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
-#echo and sleep 2
+#echo to infinity and beyond
 
 while true
 
 do
 
     echo "To infinity and beyond"
+
     sleep 2
 
 done

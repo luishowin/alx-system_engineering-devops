@@ -1,0 +1,4 @@
+#!/usr/bin/enc bash
+#kills highlander proc
+
+pkill -f -SIGKILL 7-highlander

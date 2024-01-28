@@ -1,12 +1,4 @@
 #!/usr/bin/enc bash
-#Find the PID of the 4-to_infinity_and_beyond process
-pid=$(pgrep -f "4-to_infinity_and_beyond")
+#kills the 4 to infinity proc
 
-# Check if the process is running
-if [ -n "$pid" ]; then
-    # If the process is running, send a termination signal
-    kill -TERM "$pid"
-    echo "Process 4-to_infinity_and_beyond (PID: $pid) has been stopped."
-else
-    echo "Process 4-to_infinity_and_beyond is not running."
-fi
+pkill -f 4-to_infinty_and_beyond
