@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Get listening ports and corresponding PIDs
+listening_ports=$(netstat -tuln | grep 'LISTEN')
+
+# Print header
+echo "Listening Ports:"
+echo "PID    Port   Program"
+
+# Loop through each listening port
+while IFS= read -r line; do
+    # Extract PID and port
+    pid=$(echo "$line" | awk '{print $7}' | cut -d '/' -f 1)
+    port=$(echo "$line" | awk '{print $4}' | cut -d ':' -f 2)
+
+    # Get program name
+    program=$(ps -p $pid -o comm=)
+
+    # Print PID, port, and program
+    echo "$pid    $port    $program"
+done <<< "$listening_ports"
