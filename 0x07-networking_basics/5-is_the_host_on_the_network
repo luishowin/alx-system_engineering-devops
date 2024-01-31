@@ -1,0 +1,12 @@
+#!/bin/env bash
+# Check if no argument is passed
+if [ $# -eq 0 ]; then
+    echo "Usage: $0 {IP_ADDRESS}"
+    exit 1
+fi
+
+# Get the IP address from the argument
+ip_address=$1
+
+# Ping the IP 5 times
+ping -c 5 "$ip_address"
